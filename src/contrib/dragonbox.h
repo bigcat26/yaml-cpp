@@ -1384,7 +1384,7 @@ namespace jkj {
                      UINT64_C(0xe596b7b0c643c71a), UINT64_C(0x8f7e32ce7bea5c70),
                      UINT64_C(0xb35dbf821ae4f38c), UINT64_C(0xe0352f62a19e306f)}};
         };
-#if !JKJ_HAS_INLINE_VARIABLE
+#if !JKJ_HAS_INLINE_VARIABLE && !defined(ANDROID)
         // decltype(...) should not depend on Dummy; see
         // https://stackoverflow.com/questions/76438400/decltype-on-static-variable-in-template-class.
         template <class Dummy>
@@ -2020,7 +2020,7 @@ namespace jkj {
                      {UINT64_C(0xc5a05277621be293), UINT64_C(0xc7098b7305241886)},
                      {UINT64_C(0xf70867153aa2db38), UINT64_C(0xb8cbee4fc66d1ea8)}}};
         };
-#if !JKJ_HAS_INLINE_VARIABLE
+#if !JKJ_HAS_INLINE_VARIABLE && !defined(ANDROID)
         // decltype(...) should not depend on Dummy; see
         // https://stackoverflow.com/questions/76438400/decltype-on-static-variable-in-template-class.
         template <class Dummy>
